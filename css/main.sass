@@ -1,0 +1,42 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8"
+
+
+
+/* Normalize  CSS*/
+@import "vendor/normalize"
+/* Avalanche CSS */
+@import "vendor/avalanche"
+/* Toast CSS */
+//@import "vendor/toast"
+
+$black: #303030
+$grey: #D8D8D8
+$magenta: #DE2C69
+$primary: #094269
+$primary-light: lighten($primary, 20%)
+$primary-dark: darken($primary, 20%)
+
+// width / heights
+
+$main-width: 80rem
+$main-padding: 1rem
+$main-border-radius: 5px
+$main-box-shadow: 0 0 3px black
+// transitions
+$timing: 0.3s
+
+/* Base Styles */
+@import './includes/base'
+/* Header */
+@import './includes/header'
+/* About Section */
+@import './includes/about'
+/* Work Section */
+@import './includes/work'
+/* Footer */
+@import './includes/footer'
+/* Utilities */
+@import './includes/utils'
