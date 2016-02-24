@@ -8,28 +8,40 @@
 /* Normalize  CSS*/
 @import "vendor/normalize"
 /* Avalanche CSS */
-@import "vendor/avalanche"
-/* Toast CSS */
-//@import "vendor/toast"
+//@import "vendor/avalanche"
+/* Toast Grid */
+@import "vendor/toast"
 
-$black: #303030
-$grey: #D8D8D8
-$magenta: #DE2C69
-$primary: #094269
-$primary-light: lighten($primary, 20%)
-$primary-dark: darken($primary, 20%)
+// **** COLORS *****
+$brand: #094269
+$brand-light: lighten($brand, 20%)
+$brand-dark: darken($brand, 10%)
+
+$orange: #FF660F
+$orange-light: lighten($orange, 10%)
+$black: #323030
+$gallery: #eee
+$gold: #FFD70F
+$dodger: #388EFF
 
 // width / heights
-
 $main-width: 80rem
 $main-padding: 1rem
 $main-border-radius: 5px
 $main-box-shadow: 0 0 3px black
+
+$nav-height: 4rem
 // transitions
 $timing: 0.3s
 
+@mixin size($value)
+  height: $value
+  width: $value
+
 /* Base Styles */
 @import './includes/base'
+/* Nav */
+@import './includes/nav'
 /* Header */
 @import './includes/header'
 /* About Section */

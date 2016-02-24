@@ -1,1 +1,67 @@
 
+.hero
+  height: 50vh
+  background-color: $orange
+  background-image: url(/img/hero.png)
+  background-size: cover
+  text-align: center
+  h1
+    margin: 0
+    font-size: 4vw
+  a
+    color: white
+    letter-spacing: .11rem
+    text-decoration: none
+    text-transform: uppercase
+    line-height: 50vh
+
+.bobbett
+  display: flex
+  justify-content: center
+  margin: 0
+  color: white
+
+.bobbetts
+  display: inline-block
+  background: $brand-light
+  width: 15vw
+  height: 15vw
+  line-height: 35vw
+  text-align: center
+  color: $orange
+  font-size: 3rem
+  border-radius: 50%
+  transition: $timing
+  margin: 5%
+
+@media (max-width: 900px)
+  .bobbetts
+    border-radius: 0
+    width: 33.333%
+    height: auto
+    line-height: 10rem
+    font-size: 1.5rem
+    color: white
+    margin: 0
+
+
+.bobbetts.one
+  background: $brand
+.bobbetts.two
+  background: $brand-dark
+
+
+
+.bullets
+  padding: 5rem
+  text-align: center
+  border-bottom: 2px solid $orange
+  h3
+    color: $black
+    text-transform: uppercase
+
+.bullet
+  @include size(15rem)
+  background: $brand
+  border-radius: 50%
+  display: inline-block
