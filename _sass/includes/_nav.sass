@@ -1,19 +1,29 @@
-
-
+.brand-logo
+  display: inline-block
+  width: 20%
+  padding: 0.6rem
+  max-height: $nav-height
+  svg
+    height: 2rem
 .top-nav
   background: $brand
   height: $nav-height
   line-height: $nav-height
   ul
+    display: inline-block
     list-style-type: none
     margin: 0
+    font-family: 'League Gothic', 'Gotham', helvetica, arial, sans-serif
+    text-transform: uppercase
+    font-size: 1.5rem
+    float: right
     li
       display: inline-block
+      &:hover
+        background: $brand-light
 
   a
     color: white
     text-decoration: none
     padding: 1.4rem 1rem
     height: $nav-height
-    &:hover
-      background: $brand-light

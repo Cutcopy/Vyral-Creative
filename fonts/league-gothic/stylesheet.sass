@@ -1,0 +1,50 @@
+/*
+Error: Invalid CSS after "'League Gothic'": expected expression (e.g. 1px, bold), was ";"
+        on line 3 of stylesheet.css
+
+1: /* Regular *\/
+2: @font-face {
+3:     font-family: 'League Gothic';
+4:     src: url('leaguegothic-italic-webfont.eot');
+5:     src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('leaguegothic-italic-webfont.woff') format('woff'), url('leaguegothic-italic-webfont.ttf') format('truetype'), url('leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+6:     font-weight: normal;
+7:     font-style: italic;
+8: 
+
+Backtrace:
+stylesheet.css:3
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/lexer.rb:227:in `expected!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/parser.rb:702:in `assert_done'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/parser.rb:64:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/parser.rb:223:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script.rb:27:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:1145:in `parse_script'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:718:in `parse_property'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:689:in `parse_property_or_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:655:in `parse_line'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:533:in `build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:542:in `block in build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:535:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:535:in `build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:406:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:414:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"'League Gothic'\": expected expression (e.g. 1px, bold), was \";\"\A         on line 3 of stylesheet.css\A \A 1: /* Regular */\A 2: @font-face {\A 3:     font-family: 'League Gothic';\A 4:     src: url('leaguegothic-italic-webfont.eot');\A 5:     src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('leaguegothic-italic-webfont.woff') format('woff'), url('leaguegothic-italic-webfont.ttf') format('truetype'), url('leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');\A 6:     font-weight: normal;\A 7:     font-style: italic;\A 8: "; }
